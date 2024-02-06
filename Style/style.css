@@ -1,0 +1,77 @@
+.navbar-brand, .nav-link {
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    letter-spacing: 7px;
+}
+.contenido{
+    background-image: url('../Images/fondofinal.jpg');
+    background-size: cover; 
+    background-position: center; 
+    color: black; 
+    padding-bottom: 50px;
+    margin-bottom: 50px;
+    
+}
+.nav-link:hover{
+    border-bottom: 2px solid #00cc00;
+}
+
+.info{
+    padding: 5px 0px 30px 50px;
+    justify-content: center;
+    
+}
+.contenedor{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 50px 50px 50px 50px;
+    gap: 50px;
+}
+.contenedor1{
+    margin-top: 100px;
+    background: none;
+    width: 350px;
+    height: 700px;  
+      
+}
+.img-fluid{
+    width: 100%;
+    height: 60%;
+    opacity: 0.1;
+    border-radius: 10%;
+}
+.img-fluid:hover{
+    opacity: 1;
+    border : 2px solid #00cc00;
+
+}
+.p{
+    text-align: justify;
+}
+.contacto{
+    font-family: 'Tenali Ramakrishna', sans-serif;
+    text-align: center;
+}
+header, footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.imagen img {
+    width: 100%;
+    height: auto;
+}
+
+.informacion {
+    text-align: left;
+}
+

@@ -1,0 +1,22 @@
+{
+  "name": "ingenieria_a_la_medida_2.0",
+  "version": "1.0.0",
+  "description": "new package",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MarcoAlvarezC/Web_Ingenier-aAlaMedida.git"
+  },
+  "author": "MarcoAlvarezC",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MarcoAlvarezC/Web_Ingenier-aAlaMedida/issues"
+  },
+  "homepage": "https://github.com/MarcoAlvarezC/Web_Ingenier-aAlaMedida#readme",
+  "dependencies": {
+    "bootstrap": "^5.3.3"
+  }
+}

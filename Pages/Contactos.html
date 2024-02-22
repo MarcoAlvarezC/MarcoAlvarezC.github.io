@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="descripcion" content="frecemos servicios de domótica personalizados para hogares y empresas. Automatiza tu vida con nuestras soluciones tecnológicas.">
+  <meta name="keywords" content="domótica, automatización del hogar, servicios de domótica, domótica personalizada, tecnología inteligente">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;1,900&family=Tenali+Ramakrishna&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../SCSS/styles.css">
+  <title>Contactos</title>
+</head>
+<body>
+  <section class="inicio">
+    <nav class="navbar bg-body-tertiary ">
+  <div class="container-fluid">
+    <a class="navbar-brand fs-2 mr-4 " href="#">
+      <img src="../Images/icono.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
+      I N G E N I E R Í A A LA M E D I D A
+    </a>
+  </div>
+</nav>
+  <section class="menu">
+    <nav class="navbar navbar-expand-lg bg-body-tertiary ">
+      <div class="container-fluid">
+      <div class="collapse navbar-collapse fs-5" id="navbarTogglerDemo03">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link  text-black" aria-current="page" href="../index.html">Inicio</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-black" href="../Pages/Contactos.html">Contactos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link  text-black" aria-current="page" href="../Pages/Servicios.html">Servicios</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+</section>
+<section class="ctitle">
+  <h1>ESTAMOS LISTOS PARA INICIAR TU</h1>
+  <h2>Proyecto De Domótica</h2>
+</section>
+<section class="infoc">
+  <div class="info_">
+    <img src="../Images/ubicacionnegra.png" alt="ubicacion">
+    <h2>Oficina Principal</h2>
+    <h5>Avenida siempre viva #23-12</h5>
+    <h5>Duitama(Boyacá)</h5>
+  </div>
+  <div class="info_">
+    <img src="../Images/llamada-telefonica.png" alt="Telefono">
+    <h2>Teléfonos</h2>
+    <h5>(+57)1238978001</h5>
+    <h5>(+57)1111111111</h5>
+  </div>
+  <div class="info_">
+    <img src="../Images/email.png" alt="Email">
+    <h2>Email</h2>
+    <h5>info@ingenieriaalamedida.com</h5>
+    <h5>cotizaciones@ingenieriaalamedida</h5>
+  </div>
+</section>
+<section class="form">
+  <h2>Envíanos tu Solicitud</h2>
+    <form action="procesar_solicitud.php" method="POST">
+        <div class="form-group">
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" required>
+        </div>
+        <div class="form-group">
+            <label for="correo">Correo Electrónico:</label>
+            <input type="email" id="correo" name="correo" required>
+        </div>
+        <div class="form-group">
+            <label for="celular">Número de Celular:</label>
+            <input type="tel" id="celular" name="celular" pattern="[0-9]{10}" required>
+        </div>
+        <button type="submit">Enviar Solicitud</button>
+    </form>
+</section>
+  </section>
+</body>
+</html>

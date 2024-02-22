@@ -1,0 +1,271 @@
+/* Imports */
+@import "../node_modules/bootstrap/scss/bootstrap";
+@import '_layout';
+
+// Then add additional custom code here
+/* Variables */
+$title-font: normal 24px/1.5 'Tenali Ramakrishna', sans-serif;
+$parrafo-font: normal 24px/1.5 'Roboto', sans-serif;
+/*colores */
+$color1: rgb(255, 255, 255);
+$color2: blue;
+
+
+/* SCSS */
+body{
+    background-image: url('../Images/body.jpg');
+    background-size: cover; 
+    background-position: center; 
+}
+.inicio{
+    .navbar-brand{
+        font: normal 24px/1.5 'Tenali Ramakrishna', sans-serif;
+        letter-spacing: 7px;
+        
+    }
+    .menu{
+        a{
+            &:hover{
+                border-bottom: 2px solid #00cc00;
+                 }
+        }
+    }
+    .contenido{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        .title{
+            width: 500px;
+            .title-h1{
+                font: $parrafo-font;
+                font-weight: bold;
+                padding: 10px 0 10px 0;
+            
+            }
+            .title-h2{
+                font: $parrafo-font;
+                text-align: justify;
+                padding-left: 10px;
+            }
+        }
+        .shadow-pop-tr {
+                -webkit-animation: shadow-pop-tr 0.3s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite both;
+	            animation: shadow-pop-tr 0.9s cubic-bezier(0.470, 0.000, 0.745, 0.715) infinite both;
+                width: 700px;
+                height: 500px;
+                background-size: cover; 
+                padding-top: 20px;
+                padding-right: 20px;
+                    
+                @-webkit-keyframes shadow-pop-tr {
+                    0% {
+                      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+                              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+                      -webkit-transform: translateX(0) translateY(0);
+                              transform: translateX(0) translateY(0);
+                    }
+                    100% {
+                      -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+                              box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+                      -webkit-transform: translateX(-8px) translateY(8px);
+                              transform: translateX(-8px) translateY(8px);
+                    }
+                  }
+                  @keyframes shadow-pop-tr {
+                    0% {
+                      -webkit-box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+                              box-shadow: 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e, 0 0 #3e3e3e;
+                      -webkit-transform: translateX(0) translateY(0);
+                              transform: translateX(0) translateY(0);
+                    }
+                    100% {
+                      -webkit-box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+                              box-shadow: 1px -1px #3e3e3e, 2px -2px #3e3e3e, 3px -3px #3e3e3e, 4px -4px #3e3e3e, 5px -5px #3e3e3e, 6px -6px #3e3e3e, 7px -7px #3e3e3e, 8px -8px #3e3e3e;
+                      -webkit-transform: translateX(-8px) translateY(8px);
+                              transform: translateX(-8px) translateY(8px);
+                    }
+                  }
+  
+            img{
+                width: 100%;
+                height: 100%;
+            }
+        }
+    }
+    .etiquetas{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 20px;
+        .contenedor{
+            text-align: center;
+            width: 150;
+            height: 150;
+            .elemento{
+                width: 150px;
+                height: 150px;
+                background-color: $color1;
+                border-radius: 50%;
+                box-shadow: 0 10px 10px rgba(0, 0, 0, 0.5);
+                object-fit: cover;
+                &:hover{
+                    width: 155px;
+                    height: 155px;
+                }
+            }
+            .description{
+                text-align: center;
+                padding-top: 15px;
+                font-weight: bold;
+                color: $color2;
+            }
+            h4{
+                font:$title-font;
+                text-align: center;
+            }
+        }
+    }
+    .servicios{
+        width: 100%;
+        margin-top: 50px;
+        h2,h3{
+            text-align: center;
+        }
+        h3{
+            color: $color2;
+            font-weight: bold;
+        }
+        
+    }
+    .cards{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        margin-top: 50px;
+        text-align: center;
+        .card{
+            img{
+                width: 100%;
+                height: 300px;
+                object-fit: cover;
+
+            }
+        }
+        header,footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+        }
+    }
+    .stitle{
+        font:$title-font;
+        display: flex;
+        justify-content: center; /* Centrar horizontalmente */
+        align-items: center; /* Centrar verticalmente */
+        width: 100%;
+        height: 200px;
+        padding: 50px 50px;
+        background-image: url('../Images/titleservicios.jpg');
+        background-size: cover; 
+        background-position: center;
+        font-size: 106px;
+        h1{
+            background: linear-gradient(to right, rgb(235, 12, 12) 0%, rgb(34, 255, 5) 100%);
+            -webkit-background-clip: text; 
+            -webkit-text-fill-color: transparent;
+            font-weight: bold;
+            opacity: 0.5;
+            &:hover{
+                opacity: 1;
+            }
+        }
+    }
+    .items{
+        .item {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px; /* Espaciado entre elementos */
+            width: 100%;
+            .descripcion { 
+                text-align: justify;
+                padding-right: 20px; 
+                border-bottom: 2px solid #00cc00;
+                padding: 10px;
+                .h3s{
+                    text-align: left;
+                }
+              }
+              
+              .imagen img{
+                width: 500px;
+                padding: 10px;
+                &:hover{
+                    border:2px solid #00cc00;
+                }
+              }
+          }
+        }
+    .ctitle{
+        font: $title-font;
+        width: 100%;
+        text-align: center;
+        margin-top: 10px;
+        h1{
+            color: #00cc00;
+        }
+    }
+    .infoc{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        font: $title-font;
+        padding: 20px;
+        .info_{
+            width: 300px;
+            border:2px solid #00cc00;
+            border-radius: 10px;
+            text-align: center;
+            img{
+                margin: 10px;
+                width: 25%;
+            }
+            h2{
+                font-weight: bold;
+            }
+            h5{
+                opacity: 0.7;
+            }
+        }
+        
+    }
+    .form{
+        font: $title-font;
+        text-align: center;
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            .form-group {
+                margin-bottom: 20px;
+            }
+            input[type="text"],
+            input[type="email"],
+            input[type="tel"] {
+                width: 100%;
+                padding: 10px;
+                border: 1px solid #ccc;
+                border-radius: 3px;
+}
+        }
+    }
+          
+}
+
+
+
+
+    
+
